@@ -8,7 +8,13 @@
 
 repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r38 --depth=1
 
-git clone https://github.com/AOSP-11/local_manifests .repo/local_manifests -b 11
+# or Tsinghua, etc.
+
+repo init -u https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/platform/manifest -b android-11.0.0_r38 --depth=1
+
+# 同步local_manifests
+
+git clone https://github.com/SudoerzAOSPMod/local_manifests .repo/local_manifests -b 11
 
 # 同步源码
 
@@ -42,5 +48,7 @@ $ repo init -b android-11.0.0_r38
 ```bash
 
 https://github.com/AOSP-11/local_manifests
+
+https://github.com/SudoerzAOSPMod/local_manifests
 
 ```
